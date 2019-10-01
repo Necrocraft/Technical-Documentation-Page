@@ -1,0 +1,127 @@
+code {
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+body {
+  min-width: 290px;
+  background: linear-gradient(35deg, #47D7CD, #E566A2);
+  color: black;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  background: linear-gradient(90deg, #47D7CD, #E566A2);
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  text-shadow: 2px 2px 4px;
+  margin-bottom: 30px;
+}
+
+header {
+  color: #c90404;
+  margin: 10px;
+  font-size: 35px;
+  text-align: center;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar header {
+  color: #000;
+  font-family: 'Bitter', serif;
+  font-weight: bold;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #96B946;
+}
+
+#navbar li {
+  list-style: none;
+  border-top: 1px solid;
+  width: 100%;
+  position: relative;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #000;
+  cursor: pointer;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #85FD72;
+}
+
+@media only screen and (max-width: 815px) {
+
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+footer {
+  text-align: right;
+  border-radius: 1px solid;
+  padding-top: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px;
+  font-family: 'Cinzel', serif;
+}
